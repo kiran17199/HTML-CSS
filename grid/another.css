@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#wrapper{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 5% 15% 30% 10% 35%;
+  margin: 5vh auto;
+  height: 80vmax;
+  width: 65vw;
+  grid-gap: 1.5rem;
+  grid-template-areas: 
+    "hd hd hd"
+    "main main about"
+    "main main archives"
+    "main main else"
+    "main main side";
+}
+
+#header{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-decoration: underline;
+  align-items: center;
+  grid-area: hd;
+}
+
+.subscribe {
+  color: darkgrey;
+  text-decoration: underline;
+  text-decoration-color: darkgrey;
+}
+
+.search{
+  color: darkgrey;
+}
+
+#content{
+    grid-area: main;
+    overflow-y: scroll;
+}
+
+#content::-webkit-scrollbar{
+  display: none;
+}
+
+.grid-content{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap:0.7em;
+  padding:0.8rem;
+  width: 97%;
+}
+
+.jan{
+  color: darkgrey;
+  margin-top: -2.2%;
+}
+
+.list{
+  margin-left: 7%;
+}
+
+.btn{
+  margin-top: 8%;
+}
+
+.btn span{
+  display: inline;
+  padding:0.6em;
+  border-radius: 3rem;
+}
+
+.older{
+  color: rgb(0, 200, 255);
+  border: 1px solid rgb(0, 200, 255);
+}
+
+.older:hover{
+  color:white;
+  background-color: rgb(0, 200, 255);
+  border: rgb(0, 200, 255);
+  cursor: pointer;
+}
+
+.newer{
+  color: darkgray;
+  border: 1px solid rgba(169, 169, 169, 0.641);
+}
+
+.newer:hover{
+  color: white;
+  cursor: pointer;
+  background-color: rgba(169, 169, 169, 0.641);
+  border: rgba(169, 169, 169, 0.641);
+}
+
+#about{
+  grid-area: about;
+  background-color: rgb(240, 238, 238);
+  overflow-y: scroll;
+}
+
+#about::-webkit-scrollbar{
+  display: none;
+}
+
+#archives{
+  grid-area: archives;
+  overflow-y: scroll;
+  
+}
+
+#archives::-webkit-scrollbar{
+  display: none;
+}
+.archivess{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.4rem;
+  margin: auto;
+  width: 95%;
+}
+
+#else{
+  grid-area: else;
+  overflow-y: scroll;
+}
+
+#else::-webkit-scrollbar{
+  display: none;
+}
+
+.elsewhere{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.4rem;
+  margin: auto;
+  width: 95%;
+}
+
+#side{
+  grid-area: side;
+}
+
+a{
+  color: rgb(0, 145, 255);
+  text-decoration: underline;
+}

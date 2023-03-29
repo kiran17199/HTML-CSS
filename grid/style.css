@@ -1,0 +1,115 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+#wrapper{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-gap: 2.5em;
+  grid-template-columns: repeat(2,1fr) ;
+  grid-template-rows: 8vh repeat(3,1fr);
+  min-height: 100vh;
+  width: 65vw;
+  margin: 2vh auto;
+  grid-template-areas: 
+  "hd hd"
+  "b1 b2"
+  "b3 b4"
+  "b5 b6";
+}
+
+.grid{
+  justify-self: center;
+  box-shadow: 0px 0px 0px 4px #E5E2E2;
+  width: 90%;
+  
+}
+
+#grid-head{
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  text-decoration: underline;
+  align-items: center;
+  grid-area: hd;
+}
+
+.grid-content {
+    margin: 0 auto;
+    height: 75%;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.heading1 {
+  color: rgb(0, 204, 255);
+}
+
+.heading2{
+  color: green;
+}
+
+.subscribe{
+  text-decoration: underline;
+  color: rgba(169, 169, 169, 0.629);
+  cursor: pointer;
+}
+
+.search{
+  color: rgba(169, 169, 169, 0.629);
+  cursor: pointer;
+}
+
+.desc{
+  margin-top: 2%;
+}
+.another  {
+  width:90%;
+  margin: 0 auto; 
+}
+
+.another a {
+  text-decoration: underline;
+  color: blue;
+}
+.grid-content h3{
+  margin-bottom: 1%;
+  margin-top: 4%;
+}
+#bg1
+{
+    grid-area: b1;
+}
+
+#bg2
+{
+    grid-area: b2;
+}
+
+#bg3
+{
+    grid-area: b3;
+}
+
+#bg4
+{
+    grid-area: b4;
+}
+
+#bg5
+{
+    grid-area: b5;
+}
+
+#bg6
+{
+    grid-area: b6;
+}
+ 
