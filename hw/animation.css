@@ -1,0 +1,63 @@
+.container{
+    width: 100%;
+    background-color: yellow;
+    border: 2px solid red;
+    height: 215px;
+
+}
+
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+    height: 212px;
+    width: 212px;
+
+    animation-name: babbar;
+    animation-duration: 3s; 
+    /* animation-iteration-count: 4; for how much time the time the animation will run */
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-direction: normal;
+    /* animation-direction: reverse; it will backward the animation
+    animation-direction: alternate; right to left left to right */
+    
+    /* animation-fill-mode: forward;  the animation stops at end
+         backward - after end it comes to its initial state
+         both - it will */
+}
+
+@keyframes babbar {
+    0% {
+      width: 212px;
+      background-color: aqua;
+    }
+
+    30% {
+width:35%;
+background-color: antiquewhite;
+    }
+
+    65%{
+    width:70%;
+    background-color: blue;
+    }
+
+    100%{
+    width:100%;
+    background-color: blueviolet;
+    }
+}
+
+
+/* @keyframes babbar  {
+  from {
+    width:212px
+   }
+
+to{
+width:800px
+}
+
+} */
+
+/* keyframe views the animation movement, it a instance of time, it reflects state having instances */

@@ -1,0 +1,6 @@
+.container {
+    display: grid;
+    color: blueviolet;
+    background-color: pink;
+    border: 2px palevioletred;
+  }

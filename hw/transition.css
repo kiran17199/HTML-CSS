@@ -1,0 +1,37 @@
+.container{
+    height: 500px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+    width: 500px;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 2px  solid orange;
+    background-color: aqua;
+    transition: 1s;
+
+    /* transition-property: background-color; which element do you wish to apply transition property
+    transition-property: all; it is a bad performance as it apply the property to all element 
+    transition-delay: 5s; there will be delay in displaying the element or color
+    transition: transform 1s ease 3s; shorthand property using all the elements, the 1s is between aqua color to brown color abd in condition of transform it will kept rotaing in  given second, the 3s will be rotating value when will it rotate after hovering
+     */
+
+     /* using all will rotate and change color too */
+     /* transition: transform 3s ease-in 5s;  
+     ease-out the speed in starting will be fast and in end it will be slow
+     ease-in the speed in starting will be slow and in end it will be fast */
+    /* transition: cubic-bezier(1,-0.09,0,1.68);using this we can create our own movement our own timing function*/
+     
+}
+
+.box:hover {
+    /* background-color: brown;
+    transform: rotate(45deg); */
+
+    transform:  scale(3) translateX(50px) rotate(80deg);
+
+}
